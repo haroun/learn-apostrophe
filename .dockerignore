@@ -1,13 +1,13 @@
 # Ignore all files excepts...
 *
 !app.js
-!data/
 !deployment/
 !lib/
 !LICENSE
 !modules/
 !package.json
 !package-lock.json
+!public/images/
 !README.md
 !scripts/
 !views/

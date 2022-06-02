@@ -1,6 +1,6 @@
 services:
   db:
-    image: mongo:5.0.8
+    image: mongo:4.4.14
     ports:
       - "27017:27017"
     volumes:
@@ -10,13 +10,17 @@ services:
       context: .
       args:
         - NODE_ENV
+    ports:
+      - "3000:3000"
     environment:
+      - APOS_MONGODB_LOG_LEVEL
+      - APOS_MONGODB_URI
       - NODE_ENV
-      - MONGODB
     depends_on:
       - db 
     volumes:
       - .:/srv/www/apostrophe/
+      - ./public/images/:/srv/www/apostrophe/public/images/
       - /srv/www/apostrophe/node_modules
       - /srv/www/apostrophe/data
       - /srv/www/apostrophe/public
