@@ -1,0 +1,22 @@
+services:
+  db:
+    image: mongo:5.0.8
+    ports:
+      - "27017:27017"
+    volumes:
+      - /data/db
+  web:
+    build:
+      context: .
+      args:
+        - NODE_ENV
+    environment:
+      - NODE_ENV
+      - MONGODB
+    depends_on:
+      - db 
+    volumes:
+      - .:/srv/www/apostrophe/
+      - /srv/www/apostrophe/node_modules
+      - /srv/www/apostrophe/data
+      - /srv/www/apostrophe/public

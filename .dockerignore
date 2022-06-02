@@ -1,0 +1,13 @@
+# Ignore all files excepts...
+*
+!app.js
+!data/
+!deployment/
+!lib/
+!LICENSE
+!modules/
+!package.json
+!package-lock.json
+!README.md
+!scripts/
+!views/
