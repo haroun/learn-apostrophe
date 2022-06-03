@@ -17,6 +17,9 @@
     {% if not data.user %}
       <a class="bp-button bp-header__login" href="/login">Login</a>
     {% endif %}
+    {% for page in data.home._children %}
+      <a href="{{ page._url }}">{{ page.title }}</a>
+    {% endfor %}
   </header>
   <main class="bp-main">
 {% endblock %}
