@@ -7,9 +7,9 @@ ENV NODE_ENV=${NODE_ENV}
 
 # https://serverfault.com/questions/144598/where-should-the-web-server-root-directory-go-in-linux#777655
 WORKDIR /srv/www/apostrophe
-RUN chown -R node: /srv/www/apostrophe \
-  && mkdir /srv/www/apostrophe/data \
-  && mkdir /srv/www/apostrophe/public
+RUN mkdir /srv/www/apostrophe/data \
+  && mkdir /srv/www/apostrophe/public \
+  && chown -R node: /srv/www/apostrophe
 
 USER node
 
