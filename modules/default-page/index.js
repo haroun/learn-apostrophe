@@ -5,6 +5,9 @@ module.exports = {
   },
   fields: {
     add: {
+      subtitle: {
+        type: 'string',
+      },
       main: {
         type: 'area',
         options: {
@@ -47,6 +50,7 @@ module.exports = {
         label: 'Basics',
         fields: [
           'title',
+          'subtitle',
           'main'
         ]
       }
