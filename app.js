@@ -18,6 +18,8 @@ require('apostrophe')({
     asset: {},
     // The project's first custom page type.
     'default-page': {},
-    'blog-post': {}
+    'blog-post': {},
+    'two-column-widget': {},
+    'collapse-widget': {}
   }
 });

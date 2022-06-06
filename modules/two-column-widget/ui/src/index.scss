@@ -1,0 +1,13 @@
+/* modules/two-column-widget/ui/src/index.scss */
+.two-col {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.two-col__column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+

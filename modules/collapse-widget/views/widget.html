@@ -1,0 +1,11 @@
+<section data-color="{{ data.widget.color}}" data-collapse-widget>
+  <h2>
+    <button data-collapse-button aria-expanded="false">
+      {{ data.widget.heading }}
+    </button>
+  </h2>
+  <div hidden data-collapse-detail>
+    {# `nlbr` and `safe` are core Nunjucks tag filters #}
+    {{ data.widget.detail | nlbr | safe }}
+  </div>
+</section>

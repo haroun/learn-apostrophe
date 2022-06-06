@@ -11,6 +11,11 @@
     {% if data.page.subtitle %}
       <p>{{ data.page.subtitle }}</p>
     {% endif %}
-    {% area data.page, 'main' %}
+    {% area data.page, 'main' with {
+      '@apostrophecms/image': {
+        sizes: '(min-width: 600px) 45w, (min-width: 1140px) 530px',
+        alt: 'apostrophecms'
+      }
+    } %}
   </section>
 {% endblock %}
