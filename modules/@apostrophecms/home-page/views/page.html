@@ -13,6 +13,7 @@
     <h1 class="bp-welcome__headline">
       Welcome to Apostrophe 3
     </h1>
+    {{ super() }}
     {% if not data.user %}
       {# Message only for logged out users. #}
       <h3 class="bp-welcome__help">First time spinning up the ApostropheCMS 3 demo?</h3>

@@ -20,6 +20,10 @@ require('apostrophe')({
     'default-page': {},
     'blog-post': {},
     'two-column-widget': {},
-    'collapse-widget': {}
+    'collapse-widget': {},
+    product: {},
+    article: {},
+    'article-page': {},
+    topic: {}
   }
 });

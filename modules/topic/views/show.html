@@ -1,0 +1,7 @@
+{# module/topic-page/views/show.html #}
+<p>Articles:</p>
+<ul>
+  {% for article in data.piece._articles %}
+    <li>{{ article.title }}</li>
+  {% endfor %}
+</ul>
